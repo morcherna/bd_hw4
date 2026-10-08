@@ -1,0 +1,34 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: hw4-postgres
+    environment:
+      POSTGRES_DB: road_safety_hw4
+      POSTGRES_USER: dwh
+      POSTGRES_PASSWORD: dwh_hw4
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_hw4_data:/var/lib/postgresql/data
+      - "C:/Users/mukov/Учеба/student-Mukovozova-hw1/data/student_Mukovozova/road_safety:/source:ro"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dwh -d road_safety_hw4"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  clickhouse:
+    image: clickhouse/clickhouse-server:25.8
+    container_name: hw4-clickhouse
+    ports:
+      - "8124:8123"
+      - "9001:9000"
+    volumes:
+      - clickhouse_hw4_data:/var/lib/clickhouse
+      - clickhouse_hw4_logs:/var/log/clickhouse
+      - "C:/Users/mukov/Учеба/student-Mukovozova-hw1/data/student_Mukovozova/road_safety/source.csv:/var/lib/clickhouse/user_files/source.csv:ro"
+
+volumes:
+  postgres_hw4_data:
+  clickhouse_hw4_data:
+  clickhouse_hw4_logs:

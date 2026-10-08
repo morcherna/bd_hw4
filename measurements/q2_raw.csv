@@ -1,0 +1,16 @@
+system,variant,query,run,time_ms,read_rows,read_bytes
+PostgreSQL,postgres,q2_wide,1,14.463,101530,
+PostgreSQL,postgres,q2_wide,2,14.307,101530,
+PostgreSQL,postgres,q2_wide,3,13.921,101530,
+PostgreSQL,postgres,q2_wide,4,13.402,101530,
+PostgreSQL,postgres,q2_wide,5,14.101,101530,
+ClickHouse,by_date,q2_wide,1,7,101530,1116830
+ClickHouse,by_date,q2_wide,2,7,101530,1116830
+ClickHouse,by_date,q2_wide,3,7,101530,1116830
+ClickHouse,by_date,q2_wide,4,7,101530,1116830
+ClickHouse,by_date,q2_wide,5,8,101530,1116830
+ClickHouse,by_road,q2_wide,1,7,101530,1116830
+ClickHouse,by_road,q2_wide,2,8,101530,1116830
+ClickHouse,by_road,q2_wide,3,7,101530,1116830
+ClickHouse,by_road,q2_wide,4,6,101530,1116830
+ClickHouse,by_road,q2_wide,5,6,101530,1116830

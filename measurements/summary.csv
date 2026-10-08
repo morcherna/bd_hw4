@@ -1,0 +1,7 @@
+system,variant,query,min_ms,median_ms,max_ms,read_rows,read_bytes,measurement
+PostgreSQL,postgres,q1_selective,0.614,0.734,0.830,,,"EXPLAIN ANALYZE; 5 measured runs after warmup"
+ClickHouse,by_date,q1_selective,4,5,5,16389,180279,"system.query_log; 5 measured runs after warmup"
+ClickHouse,by_road,q1_selective,4,4,7,44186,486046,"system.query_log; 5 measured runs after warmup"
+PostgreSQL,postgres,q2_wide,13.402,14.101,14.463,101530,,"EXPLAIN ANALYZE; 5 measured runs after warmup"
+ClickHouse,by_date,q2_wide,7,7,8,101530,1116830,"system.query_log; 5 measured runs after warmup"
+ClickHouse,by_road,q2_wide,6,7,8,101530,1116830,"system.query_log; 5 measured runs after warmup"

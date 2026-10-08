@@ -1,0 +1,16 @@
+system,variant,query,run,time_ms,read_rows,read_bytes
+PostgreSQL,postgres,q1_selective,1,0.614,,
+PostgreSQL,postgres,q1_selective,2,0.734,,
+PostgreSQL,postgres,q1_selective,3,0.814,,
+PostgreSQL,postgres,q1_selective,4,0.635,,
+PostgreSQL,postgres,q1_selective,5,0.830,,
+ClickHouse,by_date,q1_selective,1,5,16389,180279
+ClickHouse,by_date,q1_selective,2,5,16389,180279
+ClickHouse,by_date,q1_selective,3,5,16389,180279
+ClickHouse,by_date,q1_selective,4,4,16389,180279
+ClickHouse,by_date,q1_selective,5,5,16389,180279
+ClickHouse,by_road,q1_selective,1,6,44186,486046
+ClickHouse,by_road,q1_selective,2,4,44186,486046
+ClickHouse,by_road,q1_selective,3,7,44186,486046
+ClickHouse,by_road,q1_selective,4,4,44186,486046
+ClickHouse,by_road,q1_selective,5,4,44186,486046
